@@ -9,10 +9,9 @@
 import SwiftUI
 
 struct ProfileHost: View {
-    
-//    @Enviroment(\.editMode) var mode
-    @EnviromentObject var userData: UserData
-    
+
+    @EnvironmentObject var userData: UserData
+    @Environment(\.editMode) var mode
     @State var draftProfile = Profile.default
     
     var body: some View {
@@ -23,7 +22,10 @@ struct ProfileHost: View {
                 EditButton()
             }
             
-            ProfileSummary(profile:draftProfile)
+            if self.mode?.wrappedValue == .inactive{ ProfileSummary(profile:userData.profile)
+            }else{
+                ProfileEditor(profile: $draftProfile)
+            }
         }
         .padding()
     }
@@ -31,6 +33,6 @@ struct ProfileHost: View {
 
 struct ProfileHost_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileHost()
+        ProfileHost().environmentObject(UserData())
     }
 }

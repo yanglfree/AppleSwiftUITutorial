@@ -50,6 +50,7 @@
 		E1C4F5BB2338E4960076492B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4F5BA2338E4960076492B /* Profile.swift */; };
 		E1C4F5BD2338E5E90076492B /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4F5BC2338E5E90076492B /* ProfileSummary.swift */; };
 		E1C4F5BF2338E8750076492B /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4F5BE2338E8750076492B /* HikeBadge.swift */; };
+		E1C4F5C12338F6940076492B /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4F5C02338F6940076492B /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		E1C4F5BA2338E4960076492B /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		E1C4F5BC2338E5E90076492B /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		E1C4F5BE2338E8750076492B /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
+		E1C4F5C02338F6940076492B /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				E1C4F5B72338E4160076492B /* ProfileHost.swift */,
 				E1C4F5BA2338E4960076492B /* Profile.swift */,
 				E1C4F5BC2338E5E90076492B /* ProfileSummary.swift */,
+				E1C4F5C02338F6940076492B /* ProfileEditor.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				E1C4F5BD2338E5E90076492B /* ProfileSummary.swift in Sources */,
 				E175FB3923347C0600BA2825 /* LandmarkList.swift in Sources */,
 				E1A3C4612334BE6A008AB5B8 /* RotatedBadgeSymbol.swift in Sources */,
+				E1C4F5C12338F6940076492B /* ProfileEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
