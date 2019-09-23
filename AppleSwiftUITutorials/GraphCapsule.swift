@@ -7,18 +7,21 @@
 //
 
 import SwiftUI
+import CoreGraphics
 
 struct GraphCapsule: View {
-    
     
     var index: Int
     var height: CGFloat
     var range: Range<Double>
     var overallRange: Range<Double>
     
-    var heigthRatio: CGFloat{
-        max(CGFloat(magnitude(of: range) / magnitude(of: overallRange)), 0.15)
-    }
+//    var heigthRatio: CGFloat{
+//        max(CGFloat(magnitude(of: range) / magnitude(of: overallRange)), 0.15)
+//    }
+//
+    var heightRatio: CGFloat
+    
     
     var offsetRatio: CGFloat{
         CGFloat((range.lowerBound - overallRange.lowerBound))

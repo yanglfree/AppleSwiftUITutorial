@@ -25,6 +25,7 @@ struct LandmarkRow: View {
                     .imageScale(.medium)
                     .foregroundColor(.yellow)
             }
+            
         }
         
     }

@@ -13,7 +13,7 @@ struct LandmarkList: View {
     @EnvironmentObject var userData: UserData
     
     var body: some View {
-        NavigationView{
+        
             List{
                 Toggle(isOn: $userData.showFavoritesOnly){
                     Text("Favorite only")
@@ -29,13 +29,13 @@ struct LandmarkList: View {
                 
             }
             .navigationBarTitle(Text("Landmarks"))
-        }
+    
     }
 }
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone XS"], id: \.self){ deviceName in
+        NavigationView{
             LandmarkList().environmentObject(UserData())
         }
         
